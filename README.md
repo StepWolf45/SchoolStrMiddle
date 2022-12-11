@@ -1,2 +1,2 @@
 # SchoolStrMiddle
-lalala
+Middle functions connected to type -string-
