@@ -5,16 +5,13 @@
 int itc_find_str(string str1, string str2){
     long long length1 = itc_len(str1);
     long long length2 = itc_len(str2);
-    for (long long i = 0; i < length1; ++i) {
+    for (int i = 0; i < length1; ++i) {
         if(str1[i]==str2[0]){
             long long j=0;
             for (long long r=i; r < length1 && j < length2; r++, j++){
                 if (str1[r] != str2[j]) {
-                    break;
+                    return 0;
                 }
-            }
-            if (j == length2) {
-                return i;
             }
         }
     }
