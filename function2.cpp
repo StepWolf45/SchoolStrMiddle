@@ -2,13 +2,6 @@
 #include <string>
 #include "middle_str.h"
 
-long long itc_len(string str) {
-    long long kol = 0;
-    for (int i = 0; str[i]!='\0'; i++) {
-        kol++;
-    }
-    return kol;
-}
 int itc_find_str(string str1, string str2){
     long long length1 = itc_len(str1);
     long long length2 = itc_len(str2);

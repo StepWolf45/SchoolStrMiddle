@@ -22,7 +22,7 @@ string itc_DecToBin(string str){
     string temp = "", temp2 = "";
     long long temp_num = 0;
     for(long long i = 0; str[i] != '\0'; ++i){
-        if (str[i] < '0' || str[i] > '9'){
+                if (str[i] < '0' || str[i] > '9'){
             temp2 += itc_decToBase(stoi(temp), 2) + str[i];
             temp = "";
         }
