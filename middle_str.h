@@ -12,6 +12,6 @@ bool itc_сompare(string s1, string s2);
 int itc_countWords(string str);
 string itc_maxCharWord(string str);
 char itc_sameChar(string str);
-
+bool itc_isFirstInSecond(string s1, string s2);
 
 #endif //STRMIDDLE_MIDDLE_STR_H

@@ -9,7 +9,25 @@ long long itc_len(string str) {
     }
     return kol;
 }
-//-----------------------------------
+int itc_find_str(string str1, string str2){
+    long long length1 = itc_len(str1);
+    long long length2 = itc_len(str2);
+    for (long long i = 0; i < length1; ++i) {
+        if(str1[i]==str2[0]){
+            long long j=0;
+            for (long long r=i; r < length1 && j < length2; r++, j++){
+                if (str1[r] != str2[j]) {
+                    break;
+                }
+            }
+            if (j == length2) {
+                return i;
+            }
+        }
+    }
+    return -1;
+}
+//---------------------------------------
 string itc_maxCharWord(string str) {
     long long max = 0;
     long long length = itc_len(str);
@@ -48,4 +66,7 @@ char itc_sameChar(string str){
         }
     }
     return 0;
+}
+bool itc_isFirstInSecond(string s1, string s2){
+    return itc_find_str(s1, s2) == -1;
 }
