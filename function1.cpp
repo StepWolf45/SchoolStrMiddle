@@ -1,9 +1,10 @@
 #include <iostream>
 #include <string>
 #include "middle_str.h"
+using namespace std;
 
 int itc_len(string str) {
-    long long kol = 0;
+    int kol = 0;
     for (int i = 0; str[i]!='\0'; i++) {
         kol++;
     }

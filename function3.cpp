@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "middle_str.h"
+using namespace std;
 
 string itc_decToBase(int num, int base) {
     string bukv = "0123456789ABCDEF";

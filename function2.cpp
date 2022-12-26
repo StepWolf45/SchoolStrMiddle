@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "middle_str.h"
+using namespace std;
 
 int itc_find_str(string str1, string str2){
     int length1 = itc_len(str1);
@@ -60,3 +61,4 @@ char itc_sameChar(string str){
 bool itc_isFirstInSecond(string s1, string s2){
     return itc_find_str(s1, s2) == -1;
 }
+

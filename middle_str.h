@@ -6,6 +6,7 @@ using namespace std;
 #define STRMIDDLE_MIDDLE_STR_H
 
 int itc_len(string str);
+int itc_find_str(string str1, string str2);
 bool itc_isDigit(unsigned char c);
 unsigned char itc_toUpper(unsigned char c);
 unsigned char itc_changeCase(unsigned char c);
@@ -20,6 +21,6 @@ string itc_rmFreeSpace(string str);
 bool itc_isIp(string str);
 
 string itc_DecToBin(string str);
-string itc_decToBase(int num, int base)
+string itc_decToBase(int num, int base);
 
 #endif //STRMIDDLE_MIDDLE_STR_H
