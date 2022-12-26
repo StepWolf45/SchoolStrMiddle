@@ -2,7 +2,7 @@
 #include <string>
 #include "middle_str.h"
 
-long long itc_len(string str) {
+int itc_len(string str) {
     long long kol = 0;
     for (int i = 0; str[i]!='\0'; i++) {
         kol++;

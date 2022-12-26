@@ -5,7 +5,7 @@ using namespace std;
 #ifndef STRMIDDLE_MIDDLE_STR_H
 #define STRMIDDLE_MIDDLE_STR_H
 
-long long itc_len(string str);
+int itc_len(string str);
 bool itc_isDigit(unsigned char c);
 unsigned char itc_toUpper(unsigned char c);
 unsigned char itc_changeCase(unsigned char c);

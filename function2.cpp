@@ -3,12 +3,12 @@
 #include "middle_str.h"
 
 int itc_find_str(string str1, string str2){
-    long long length1 = itc_len(str1);
-    long long length2 = itc_len(str2);
+    int length1 = itc_len(str1);
+    int length2 = itc_len(str2);
     for (int i = 0; i < length1; ++i) {
         if(str1[i]==str2[0]){
-            long long j=0;
-            for (long long r=i; r < length1 && j < length2; r++, j++){
+            int j=0;
+            for (int r=i; r < length1 && j < length2; r++, j++){
                 if (str1[r] != str2[j]) {
                     return 0;
                 }
@@ -19,8 +19,8 @@ int itc_find_str(string str1, string str2){
 }
 //---------------------------------------
 string itc_maxCharWord(string str) {
-    long long max = 0;
-    long long length = itc_len(str);
+    int max = 0;
+    int length = itc_len(str);
     string time_str, final;
     if (itc_countWords(str) == 1) {
         return "error";
