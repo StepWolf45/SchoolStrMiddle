@@ -3,20 +3,20 @@
 #include "middle_str.h"
 using namespace std;
 
-int itc_find_str(string str1, string str2){
+bool itc_find_str(string str1, string str2){
     int length1 = itc_len(str1);
     int length2 = itc_len(str2);
-    for (int i = 0; i < length1; ++i) {
-        if(str1[i]==str2[0]){
+    for (int i = 0; i < length2; ++i) {
+        if(str2[i]==str1[0]){
             int j=0;
-            for (int r=i; r < length1 && j < length2; r++, j++){
-                if (str1[r] != str2[j]) {
+            for (int r=i; r < length2 && j < length1; r++, j++){
+                if (str2[r] != str1[j]) {
                     return 0;
                 }
             }
         }
     }
-    return -1;
+    return 1;
 }
 //---------------------------------------
 string itc_maxCharWord(string str) {
@@ -59,6 +59,6 @@ char itc_sameChar(string str){
     return 0;
 }
 bool itc_isFirstInSecond(string s1, string s2){
-    return itc_find_str(s1, s2) == -1;
+    return itc_find_str(s1, s2);
 }
 
